@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+body {
+    background-image: url("/public/INEC.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 @tailwind utilities;
