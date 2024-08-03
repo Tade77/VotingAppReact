@@ -2,7 +2,7 @@ import Login from "../Components/Login/Login";
 
 const Home = () => {
   return (
-    <div className="homepage">
+    <div className="">
       <Login />
     </div>
   );

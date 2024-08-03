@@ -1,13 +1,16 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <>
+    <div className="homepage">
       <section className="bg">
-        <img src="/public/INEC.jpg" className="inec mt-8" alt="" />
+        <img
+          src="/public/logoBgWhite.jpeg"
+          className="inec w-[100vw] relative opacity-[0.45]"
+          alt=""
+        />
       </section>
-      <section className="">
+      <section className=" absolute top-20 left-[40%]">
         <form
           action=""
           className="login flex flex-col justify-center items-center space-y-6 h-[100vh]"
@@ -16,25 +19,25 @@ const Login = () => {
           <input
             type="text"
             placeholder="email"
-            className="bg-green-100 p-2 rounded-md"
+            className="bg-white p-2 rounded-md"
           />
           <input
             type="text"
             placeholder="password"
-            className="bg-green-100 p-2 rounded-md"
+            className="bg-white p-2 rounded-md"
           />
-          <button className=" px-[6.8rem] py-2 rounded-md bg-[rgb(48,195,110)] text-white">
+          <button className=" px-[6.8rem] py-2 rounded-md text-white bg-[rgb(35,194,44)]">
             Submit
           </button>
           <p className="text-white -ml-[65px]">
             Don't have account?
             <Link to={"/sign_up"}>
-              <span className="text-blue-800 underline">sign up</span>
+              <span className="text-blue-800 ml-2 underline">sign up</span>
             </Link>
           </p>
         </form>
       </section>
-    </>
+    </div>
   );
 };
 

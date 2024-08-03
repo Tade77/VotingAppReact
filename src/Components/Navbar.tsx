@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="flex justify-between fixed z-10 w-[100%] bg-white">
-      <div className="logo ">
+      <div className="logo cursor-pointer ">
         <img
-          src="/public/logoBgWhite.jpeg"
+          src="/public/homelogo.png"
           alt="logo"
-          className="inec_logo w-32 h-20 object-fill rounded-lg"
+          className="inec_logo w-40 m-4"
         />
       </div>
       <ul className="flex flex-row gap-4 p-6">
